@@ -20,7 +20,8 @@ docker pull docker.io/chongchuanbing/horovod-mpi-runtime:0.19.0-cuda10.0-cudnn7-
 ### CPU
 #### build
 ```
-docker build --build-arg HOROVOD_VERSION=0.19.0 \
+docker build --build-arg REGISTRY=docker.io/chongchuanbing \
+             --build-arg HOROVOD_VERSION=0.19.0 \
              --build-arg PYTHON_VERSION=3.6 \
              --build-arg UBUNTU_VERSION=18.04 \
              -t horovod-mpi-runtime:0.19.0-mpi4.0-py3.6-ubuntu18.04 \
